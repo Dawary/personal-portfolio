@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut" type="x-icon" href="images/img.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Protfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main -->
+
+    <main>
+      <!-- sliderbar -->
+
+      <section class="sidebar " data-sidebar>
+
+        <div class="sidebar-info">
+          <figure class="image-box">
+            <img src="images/img.png" alt="img" />
+          </figure>
+
+          <div class="info-container">
+            <h1 class="name">Sachin Bisht</h1>
+            <p class="title">Web developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contects</span>
+
+            <i class="fa-solid fa-angles-down"></i>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="seprator"></div>
+
+            <ul class="contacts-list">
+
+              <li class="contact-item">
+                <div class="icon-box">
+                  <icon-icon name="mail-outline"><i class="fa-regular fa-envelope"></i></icon-icon>
+                </div>
+
+                <div class="contact-info">
+
+                  <p class="contact-title">Email</p>
+
+                  <a href="mailto:sachinbisht913@gmail.com" class="contect-link"
+                    >sachinbisht913@gmail.com</a>
+
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="icon-box">
+                  <icon-icon name="phone-portrait-outline"><i class="fa-solid fa-mobile-screen"></i></icon-icon>
+                </div>
+
+                <div class="contact-info">
+
+                  <p class="contact-title">Phone</p>
+
+                  <a href="tel:9917670527" class="contect-link"
+                    >+919917670527</a>
+
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="icon-box">
+                  <icon-icon name="calender-outline"><i class="fa-solid fa-calendar-days"></i></icon-icon>
+                </div>
+
+                <div class="contact-info">
+
+                  <p class="contact-title">Birthday</p>
+
+                  <time datetime="2002-03-22">Mar 22, 2002</time>
+
+                </div>
+              </li>
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <icon-icon name="location-outline"><i class="fa-solid fa-location-dot"></i></icon-icon>
+                </div>
+
+                <div class="contact-info">
+
+                  <p class="contact-title">Location</p>
+
+                  <address>Garur, Bageshwar, Uttrakhand</address>
+
+                </div>
+              </li>
+
+
+            </ul>
+            
+            <div class="seprator"></div>
+
+            <ul class="social-list">
+
+                <li class="social-item">
+                    <a href="https://www.instagram.com/s_sachinbeast_/" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://www.linkedin.com/in/sachin-bisht913/" class="social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+         
+
+            </ul>
+
+          
+        </div>
+      </section>
+
+      <!-- main Content -->
+
+      <div class="main-content">
+
+       <!-- navbar -->
+
+       <nav class="navbar">
+        <ul class="navbar-list">
+
+            <li class="navbar-item">
+                <button class="navbar-link active" data-nav-link >About</button>
+            </li>
+            <li class="navbar-item">
+                <button class="navbar-link"  data-nav-link>Project</button>
+            </li>
+            <li class="navbar-item">
+                <button class="navbar-link"  data-nav-link>Contact</button>
+            </li>
+            <li class="navbar-item">
+                <a href="images/cv.pdf" class="navbar-link"  data-nav-link>Download CV</a>
+            </li>
+
+        </ul>
+       </nav>
+
+        <!-- about -->
+
+       <article class="about active " id="about" data-page="about">
+        <header>
+            <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+            <p>I'm a BCA graduate student and I want to make my career in web development for which
+                 I am fully dedicated and I want to learn a lot of new thing in this field.</p>
+                 <p>I am a dynamic and enthusiastic with a passion for technology and a proven track record of academic excellence. I have honed my skills 
+                  in various aspects of computer science, including programming, web development.<br>
+                  I look forward to leveraging my BCA background to make meaningful contributions in the dynamic field of technology, and I am excited about the opportunities that lie ahead in my career.
+                </p>
+        </section>
+
+        <!-- skill -->
+        <section class="skills">
+            <div class="tab-titles">
+                <p class="tab-links active" onclick="opentab('skills')">skills</p>
+                <p class="tab-links" onclick="opentab('Education')" >Education</p>
+                
+            </div>
+
+            <div class="tab-contents active" id="skills">
+                <ul class="skill-list">
+
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">HTML</h5>
+                      <!-- <data value="80">80%</data> -->
+                    </div>
+
+                    <div class="skill-progress-bar">
+                      <div class="skill-progress-fill" style="width: 80%;"></div>
+                    </div>
+
+                  </li>
+                  
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">CSS</h5>
+                      <!-- <data value="80">80%</data> -->
+                    </div>
+
+                    <div class="skill-progress-bar">
+                      <div class="skill-progress-fill" style="width: 80%;"></div>
+                    </div>
+
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">Javascript</h5>
+                      <!-- <data value="80">80%</data> -->
+                    </div>
+
+                    <div class="skill-progress-bar">
+                      <div class="skill-progress-fill" style="width: 70%;"></div>
+                    </div>
+
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">Bootstrap</h5>
+                      <!-- <data value="80">80%</data> -->
+                    </div>
+
+                    <div class="skill-progress-bar">
+                      <div class="skill-progress-fill" style="width: 70%;"></div>
+                    </div>
+
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">Tailwind CSS</h5>
+                      <!-- <data value="80">80%</data> -->
+                    </div>
+
+                    <div class="skill-progress-bar">
+                      <div class="skill-progress-fill" style="width: 65%;"></div>
+                    </div>
+
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">Node.Js</h5>
+                      <!-- <data value="80">50%</data> -->
+                    </div>
+
+                    <div class="skill-progress-bar">
+                      <div class="skill-progress-fill" style="width: 50%;"></div>
+                    </div>
+
+                  </li>
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">MongoDB</h5>
+                      <!-- <data value="80">80%</data> -->
+                    </div>
+
+                    <div class="skill-progress-bar">
+                      <div class="skill-progress-fill" style="width: 50%;"></div>
+                    </div>
+
+                  </li>
+
+
+                  <li class="skills-item">
+                    <div class="title-wrapper">
+                      <h5 class="h5">Photoshop</h5>
+                      <!-- <data value="80">80%</data> -->
+                    </div>
+
+                    <div class="skill-progress-bar">
+                      <div class="skill-progress-fill" style="width: 80%;"></div>
+                    </div>
+
+                  </li>
+
+
+          
+
+                </ul>
+            </div>
+            <div class="tab-contents " id="Education">
+                <ul>
+                 <li><span>2017</span><br>Complete 10th from Vivekanand inter college Garur, Bageshwar</li>
+                 <li><span>2019</span><br>Complete 12th from Vivekanand Inter College Garur, Bageshwar</li>
+                 <li><span>2020-2023</span><br>Complete BCA from Soban Singh Jeena University Almora</li>
+
+                </ul>
+            </div>
+
+        </section>
+
+       </article>
+
+
+       <!-- projects -->
+
+       <article class="Portfolio " id="project" data-page="project">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <div class="projects">
+
+         <div class="work-list">
+
+       
+
+          <div class="work">
+            <img src="images/weather.jpg" width="300px" alt="">
+            <div class="layer">
+                <h3>Weather Application</h3>
+                <p>Check the weather on the fly with  app, using a reliable weather API. Get quick updates and stay prepared wherever you are..</p>
+                     <a href="https://dawary.github.io/weather-app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <p class="title">Weather Application</p>
+
+         </div>
+
+          <div class="work">
+            <img src="images/youtube.webp" width="300px" alt="">
+            <div class="layer">
+                <h3>Youtube Clone</h3>
+                <p>Explore videos effortlessly in the YouTube clone app, powered by a user-friendly API.  content discovery and sharing..</p>
+                     <a href="https://dawary.github.io/youtube_c/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <p class="title">Youtube clone</p>
+
+         </div>
+
+          <div class="work">
+            <img src="images/movieposter.jpg" width="300px" alt="">
+            <div class="layer">
+                <h3>Movie website</h3>
+                <p>know the latest movie arrivel.</p>
+                     <a href=" https://dawary.github.io/movieapp/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <p class="title">Movie website</p>
+
+         </div>
+
+         <div class="work">
+          <img src="images/news.jpg" width="300px"  alt="">
+          <div class="layer">
+              <h3>News web Application</h3>
+              <p>Stay informed in real time with our news app, fueled by a dynamic News API. Instantly access the latest headlines and breaking news. Your go-to source for staying up-to-date, anytime, anywhere...</p>
+                   <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+          <p class="title">News web Application</p>
+       </div>
+
+          <div class="work">
+            <img src="images/e-commerce.jpg" width="300px" alt="">
+            <div class="layer">
+                <h3>E-Commerce app</h3>
+                <p>shopping web interface.</p>
+                     <a href=" https://dawary.github.io/e-commercial-website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <p class="title">E-Commerce app</p>
+
+         </div>
+  
+
+         </div>
+
+
+         
+        </div>
+
+
+
+
+
+
+
+
+
+
+       </article>
+
+       <!-- contect -->
+
+       <article class="contact" id="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contect</h2>
+        </header>
+
+        <section class="mapbox">
+          <figure>
+          
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9783.275466487416!2d79.59475750126354!3d29.895687673017473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a7493b89e78601%3A0x5d4262363db9201d!2sPaye%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1702995778648!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form  class="form">
+            <div class="input-wrapper">
+              <input type="text" class="form-input" placeholder="Full name" required id="name">
+
+              <input type="email" class="form-input" 
+             id="email" placeholder="Email address" required>
+            </div>
+
+              <textarea name="message" class="form-input" placeholder="Your message" id="subject" required></textarea>
+
+              <button class="form-btn" type="submit" disabled><i class="fa-solid fa-paper-plane"></i><span>Send message</span></button>
+          </form>
+
+        </section>
+
+       </article>
+
+
+
+      </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
